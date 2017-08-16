@@ -68,10 +68,20 @@ public class Sql2oDestinationDaoTest {
 
     @Test
     public void updateLocation() throws Exception {
+        Destination testDestination = createDest();
+        destinationDao.add(testDestination);
+        destinationDao.updateLocation(testDestination.getId(), "Africa");
+        Destination updatedDestination = destinationDao.findById(testDestination.getId());
+        assertEquals("Africa", updatedDestination.getLocation());
     }
 
     @Test
     public void removeById() throws Exception {
+        Destination testDestination = createDest();
+        Destination testDestination2 = createDest();
+        destinationDao.add(testDestination);
+        destinationDao.add(testDestination2);
+        destinationDao.removeById(testDestination.getId());
+        assertEquals(1, destinationDao.getAllDestinations().size());
     }
-
 }

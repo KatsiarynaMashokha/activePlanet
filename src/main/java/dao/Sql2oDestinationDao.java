@@ -54,13 +54,26 @@ public class Sql2oDestinationDao implements DestinationDao {
 
     
     public void updateLocation(int destId, String newLocation) {
-
-
-
+        String sql = "UPDATE destinations SET location = :location WHERE id = :id";
+        try(Connection con = sql2o.open()) {
+            con.createQuery(sql)
+                    .addParameter("id", destId)
+                    .addParameter("location", newLocation)
+                    .executeUpdate();
+        }  catch (Sql2oException ex) {
+            System.out.println(ex);
+        }
     }
 
     
     public void removeById(int id) {
-
+        String sql = "DELETE FROM destinations WHERE id = :id";
+        try(Connection con = sql2o.open()) {
+            con.createQuery(sql)
+                    .addParameter("id", id)
+                    .executeUpdate();
+        } catch (Sql2oException ex) {
+            System.out.println(ex);
+        }
     }
 }
