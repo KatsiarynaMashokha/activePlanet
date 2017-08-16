@@ -52,17 +52,13 @@ public class Sql2oAdventureDaoTest {
         assertEquals(2, adventureDao.getAllAdventuresByDestinations(destinationID).size());
     }
 
-//    @Test
-//    public void getAllAdventuresByDestinations() throws Exception {
-//        Adventure adventureOne = create();
-//        Adventure adventureTwo = create();
-//
-//        assertEquals(2, adventureDao.getAllAdventuresByDestinations(1).size());
-//
-//    }
-
     @Test
     public void updateDescription() throws Exception {
+        Adventure test = create();
+        adventureDao.add(test);
+        adventureDao.updateDescription(test.getAdventureId(), "birthday shots");
+        Adventure updated = adventureDao.findById(test.getAdventureId());
+        assertEquals("birthday shots", updated.getDescription());
     }
 
     @Test

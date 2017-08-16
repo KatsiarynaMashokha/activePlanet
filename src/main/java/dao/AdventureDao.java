@@ -11,11 +11,12 @@ public interface AdventureDao {
 
     //read
     List<Adventure> getAllAdventuresByDestinations (int destinationID);
+    Adventure findById(int id);
 
     //update
-    void updateDescription(int adventureId, String newContent, int destinationPoint);
-    void updateTitle(int adventureId, String newContent, int destinationPoint);
-    void updateDuration(int adventureId, String newTime, int destinationPoint);
+    void updateDescription(int adventureId, String newContentdestination);
+    void updateTitle(int adventureId, String newContentdestination);
+    void updateDuration(int adventureId, String newTimedestination);
 
     //delete
     void deleteById(int adventureId);
