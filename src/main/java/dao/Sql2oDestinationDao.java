@@ -37,7 +37,6 @@ public class Sql2oDestinationDao implements DestinationDao {
         }
     }
 
-    
     public List<Adventure> getAllAdventuresByDestinations(int destinationID) {
         String sql = "SELECT * FROM adventures WHERE destinationPoint = :destinationPoint";
         try (Connection con = sql2o.open()) {
@@ -47,8 +46,6 @@ public class Sql2oDestinationDao implements DestinationDao {
         }
     }
 
-
-    
     public Destination findById(int id) {
         String sql = "SELECT * FROM destinations WHERE id = :id";
         try(Connection con = sql2o.open()) {
@@ -58,7 +55,6 @@ public class Sql2oDestinationDao implements DestinationDao {
         }
     }
 
-    
     public void updateLocation(int destId, String newLocation) {
         String sql = "UPDATE destinations SET location = :location WHERE id = :id";
         try(Connection con = sql2o.open()) {
@@ -70,7 +66,6 @@ public class Sql2oDestinationDao implements DestinationDao {
             System.out.println(ex);
         }
     }
-
     
     public void removeById(int id) {
         String sql = "DELETE FROM destinations WHERE id = :id";

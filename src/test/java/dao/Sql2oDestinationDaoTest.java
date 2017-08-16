@@ -14,7 +14,6 @@ public class Sql2oDestinationDaoTest {
     private Sql2oDestinationDao destinationDao;
     private Connection con;
 
-
     @Before
     public void setUp() throws Exception {
         final String connectionString = "jdbc:h2:mem:testing;INIT=RUNSCRIPT from 'classpath:db/create.sql'";
