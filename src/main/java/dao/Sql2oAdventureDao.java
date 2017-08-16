@@ -98,7 +98,14 @@ public class Sql2oAdventureDao implements AdventureDao {
     }
 
     
-    public void deleteById(int adventureId) {
-
+    public void deleteById(int deleteIt) {
+        String sql = "DELETE FROM adventures WHERE adventureId= :adventureId";
+        try (Connection conn = sql2o.open()) {
+            conn.createQuery(sql)
+                    .addParameter("adventureId", deleteIt)
+                    .executeUpdate();
+        } catch (Sql2oException ex) {
+            System.out.println(ex);
+        }
     }
 }

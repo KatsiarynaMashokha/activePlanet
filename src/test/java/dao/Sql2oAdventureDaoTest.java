@@ -81,6 +81,11 @@ public class Sql2oAdventureDaoTest {
 
     @Test
     public void deleteById() throws Exception {
+        Adventure test = create();
+        Adventure test2 = create();
+        adventureDao.add(test);
+        adventureDao.add(test2);
+        adventureDao.deleteById(test2.getAdventureId());
+        assertEquals(1, adventureDao.getAllAdventuresByDestinations(1).size());
     }
-
 }
