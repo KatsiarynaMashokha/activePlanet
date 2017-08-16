@@ -10,7 +10,7 @@ public interface DestinationDao {
 
     // read information
     List<Destination> getAllDestinations();
-    List<Adventure> getAllAdventuresByDestinations (int destinationID);
+
     Destination findById(int id);
 
     // update

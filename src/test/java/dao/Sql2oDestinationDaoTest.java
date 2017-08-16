@@ -1,5 +1,6 @@
 package dao;
 
+import dataModels.Adventure;
 import dataModels.Destination;
 import org.junit.After;
 import org.junit.Before;
@@ -27,9 +28,13 @@ public class Sql2oDestinationDaoTest {
         con.close();
     }
 
-    // helper
+    // helpers
     private Destination createDest() {
         return new Destination("North America");
+    }
+
+    private Adventure createAdventure() {
+        return new Adventure("America", "Pacific Crest Trail", "hiking trail", "6 months", "summer", 1);
     }
 
     @Test
@@ -46,10 +51,6 @@ public class Sql2oDestinationDaoTest {
         destinationDao.add(testDestination);
         destinationDao.add(testDestinationOne);
         assertEquals(2, destinationDao.getAllDestinations().size());
-    }
-
-    @Test
-    public void getAllAdventuresByDestinations() throws Exception {
     }
 
     @Test

@@ -39,8 +39,14 @@ public class Sql2oDestinationDao implements DestinationDao {
 
     
     public List<Adventure> getAllAdventuresByDestinations(int destinationID) {
-        return null;
+        String sql = "SELECT * FROM adventures WHERE destinationPoint = :destinationPoint";
+        try (Connection con = sql2o.open()) {
+            return con.createQuery(sql)
+                    .addParameter("destinationPoint", destinationID)
+                    .executeAndFetch(Adventure.class);
+        }
     }
+
 
     
     public Destination findById(int id) {

@@ -10,8 +10,7 @@ public interface AdventureDao {
     void add(Adventure newFunThing);
 
     //read
-
-    List<Adventure> getAllAdventures(int destinationId);
+    List<Adventure> getAllAdventuresByDestinations (int destinationID);
 
     //update
     void updateDescription(int adventureId, String newContent, int destinationPoint);

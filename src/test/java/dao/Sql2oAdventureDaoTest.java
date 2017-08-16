@@ -9,9 +9,7 @@ import org.sql2o.Sql2o;
 
 import static org.junit.Assert.*;
 
-/**
- * Created by Guest on 8/16/17.
- */
+
 public class Sql2oAdventureDaoTest {
     private Sql2oAdventureDao adventureDao;
     private Connection con;
@@ -31,18 +29,37 @@ public class Sql2oAdventureDaoTest {
     }
 
     // helper
-    private void create() {
-        new Adventure("America", "Pacific Crest Trail", "hiking trail", "6 months", "summer", 1);
+    private Adventure create() {
+        return new Adventure("America", "Pacific Crest Trail", "hiking trail", "6 months", "summer", 1);
     }
 
     @Test
-    public void add() throws Exception {
-
+    public void addAdventureSetsId() throws Exception {
+        Adventure test = create();
+        Adventure test2 = create();
+        adventureDao.add(test);
+        adventureDao.add(test2);
+        assertEquals(2, test2.getAdventureId());
     }
 
     @Test
-    public void getAllAdventures() throws Exception {
+    public void getAllAdventuresByDestination() throws Exception {
+        Adventure test = create();
+        Adventure test2 = create();
+        adventureDao.add(test);
+        adventureDao.add(test2);
+        int destinationID = test2.getDestinationPoint();
+        assertEquals(2, adventureDao.getAllAdventuresByDestinations(destinationID).size());
     }
+
+//    @Test
+//    public void getAllAdventuresByDestinations() throws Exception {
+//        Adventure adventureOne = create();
+//        Adventure adventureTwo = create();
+//
+//        assertEquals(2, adventureDao.getAllAdventuresByDestinations(1).size());
+//
+//    }
 
     @Test
     public void updateDescription() throws Exception {
