@@ -1,14 +1,17 @@
 package dao;
 
 import dataModels.Adventure;
+import org.sql2o.Sql2o;
 
 import java.util.List;
 
-/**
- * Created by Guest on 8/16/17.
- */
 public class Sql2oAdventureDao implements AdventureDao {
-    
+    private final Sql2o sql2o;
+
+    public Sql2oAdventureDao(Sql2o sql2o) {
+        this.sql2o = sql2o;
+    }
+
     public void add(Adventure newFunThing) {
         
     }
