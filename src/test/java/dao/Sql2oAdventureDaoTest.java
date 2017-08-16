@@ -63,10 +63,20 @@ public class Sql2oAdventureDaoTest {
 
     @Test
     public void updateTitle() throws Exception {
+        Adventure test = create();
+        adventureDao.add(test);
+        adventureDao.updateTitle(test.getAdventureId(), "Tour de France");
+        Adventure updated = adventureDao.findById(test.getAdventureId());
+        assertEquals("Tour de France", updated.getTitle());
     }
 
     @Test
     public void updateDuration() throws Exception {
+        Adventure test = create();
+        adventureDao.add(test);
+        adventureDao.updateDuration(test.getAdventureId(), "7 days");
+        Adventure updated = adventureDao.findById(test.getAdventureId());
+        assertEquals("7 days", updated.getDuration());
     }
 
     @Test

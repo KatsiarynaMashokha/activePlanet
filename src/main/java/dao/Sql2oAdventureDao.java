@@ -73,12 +73,28 @@ public class Sql2oAdventureDao implements AdventureDao {
 
     
     public void updateTitle(int adventureId, String newContent) {
-
+        String sql = "UPDATE adventures SET title = :title WHERE adventureId = :adventureId";
+        try (Connection conn = sql2o.open()) {
+            conn.createQuery(sql)
+                    .addParameter("title", newContent)
+                    .addParameter("adventureId", adventureId)
+                    .executeUpdate();
+        } catch (Sql2oException ex) {
+            System.out.println(ex);
+        }
     }
 
     
     public void updateDuration(int adventureId, String newTime) {
-
+        String sql = "UPDATE adventures SET duration = :duration WHERE adventureId = :adventureId";
+        try (Connection conn = sql2o.open()) {
+            conn.createQuery(sql)
+                    .addParameter("duration", newTime)
+                    .addParameter("adventureId", adventureId)
+                    .executeUpdate();
+        } catch (Sql2oException ex) {
+            System.out.println(ex);
+        }
     }
 
     

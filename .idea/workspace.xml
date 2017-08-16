@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98228ac4-d42a-44c0-a2f8-08f49d075d38" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/AdventureDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/AdventureDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/dao/Sql2oAdventureDao.java" afterPath="$PROJECT_DIR$/src/main/java/dao/Sql2oAdventureDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/dao/Sql2oAdventureDaoTest.java" afterPath="$PROJECT_DIR$/src/test/java/dao/Sql2oAdventureDaoTest.java" />
     </list>
@@ -24,8 +23,8 @@
             <file leaf-file-name="create.sql" pinned="false" current-in-tab="true">
               <entry file="file://$PROJECT_DIR$/src/main/resources/db/create.sql">
                 <provider selected="true" editor-type-id="text-editor">
-                  <state relative-caret-position="135">
-                    <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="20" />
+                  <state relative-caret-position="165">
+                    <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
                     <folding />
                   </state>
                 </provider>
@@ -67,8 +66,8 @@
       <file leaf-file-name="Destination.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dataModels/Destination.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="465">
+              <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
               <folding>
                 <element signature="e#139#140#0" expanded="true" />
                 <element signature="e#179#180#0" expanded="true" />
@@ -165,8 +164,8 @@
       <file leaf-file-name="Sql2oAdventureDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oAdventureDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="220">
+              <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#285#286#0" expanded="true" />
@@ -179,8 +178,8 @@
       <file leaf-file-name="Sql2oDestinationDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oDestinationDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+            <state relative-caret-position="524">
+              <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#322#323#0" expanded="true" />
@@ -190,11 +189,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sql2oDestinationDaoTest.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="Sql2oDestinationDaoTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/dao/Sql2oDestinationDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="185">
-              <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
+            <state relative-caret-position="60">
+              <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
               <folding>
                 <element signature="e#804#805#0" expanded="true" />
                 <element signature="e#859#860#0" expanded="true" />
@@ -203,11 +202,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Sql2oAdventureDaoTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Sql2oAdventureDaoTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/dao/Sql2oAdventureDaoTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="467">
-              <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+            <state relative-caret-position="75">
+              <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -595,11 +594,11 @@
         <option value="$PROJECT_DIR$/src/main/java/dataModels/Destination.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db/create.sql" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/dao/Sql2oDestinationDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/Sql2oDestinationDaoTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/DestinationDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/AdventureDao.java" />
         <option value="$PROJECT_DIR$/src/main/java/dao/Sql2oAdventureDao.java" />
+        <option value="$PROJECT_DIR$/src/main/java/dao/Sql2oDestinationDao.java" />
         <option value="$PROJECT_DIR$/src/test/java/dao/Sql2oAdventureDaoTest.java" />
       </list>
     </option>
@@ -841,33 +840,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.Sql2oAdventureDaoTest.updateDescription">
-    <configuration default="false" name="Sql2oAdventureDaoTest.addAdventureSetsId" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="dao.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="activeplanet_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="dao" />
-      <option name="MAIN_CLASS_NAME" value="dao.Sql2oAdventureDaoTest" />
-      <option name="METHOD_NAME" value="addAdventureSetsId" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.Sql2oDestinationDaoTest">
     <configuration default="false" name="Sql2oAdventureDaoTest.getAllAdventuresByDestinations" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -960,6 +933,32 @@
       <option name="MAIN_CLASS_NAME" value="dao.Sql2oAdventureDaoTest" />
       <option name="METHOD_NAME" value="updateDescription" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Sql2oDestinationDaoTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="dao.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="activeplanet_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="dao" />
+      <option name="MAIN_CLASS_NAME" value="dao.Sql2oDestinationDaoTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -1186,19 +1185,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.addAdventureSetsId" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.getAllAdventuresByDestinations" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.getAllAdventuresByDestination" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.updateDescription" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.getAllAdventuresByDestinations" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.getAllAdventuresByDestination" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.updateDescription" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Sql2oDestinationDaoTest" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.updateDescription" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.Sql2oDestinationDaoTest" />
         <item index="1" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.getAllAdventuresByDestination" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.getAllAdventuresByDestinations" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.addAdventureSetsId" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.updateDescription" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.getAllAdventuresByDestination" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.Sql2oAdventureDaoTest.getAllAdventuresByDestinations" />
       </list>
     </recent_temporary>
   </component>
@@ -1225,8 +1224,11 @@
     <history-entry file="Sql2oAdventureDaoTest - 2017.08.16 at 15h 43m 33s.xml">
       <configuration name="Sql2oAdventureDaoTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Sql2oAdventureDaoTest_getAllAdventuresByDestination - 2017.08.16 at 15h 39m 39s.xml">
-      <configuration name="Sql2oAdventureDaoTest.getAllAdventuresByDestination" configurationId="JUnit" />
+    <history-entry file="Sql2oAdventureDaoTest - 2017.08.16 at 16h 02m 45s.xml">
+      <configuration name="Sql2oAdventureDaoTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Sql2oAdventureDaoTest - 2017.08.16 at 16h 03m 13s.xml">
+      <configuration name="Sql2oAdventureDaoTest" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Sql2oAdventureDaoTest_getAllAdventuresByDestination - 2017.08.16 at 15h 41m 18s.xml">
       <configuration name="Sql2oAdventureDaoTest.getAllAdventuresByDestination" configurationId="JUnit" />
@@ -1234,16 +1236,13 @@
     <history-entry file="Sql2oAdventureDaoTest_getAllAdventuresByDestination - 2017.08.16 at 15h 41m 46s.xml">
       <configuration name="Sql2oAdventureDaoTest.getAllAdventuresByDestination" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="Sql2oAdventureDaoTest_getAllAdventuresByDestinations - 2017.08.16 at 15h 37m 59s.xml">
-      <configuration name="Sql2oAdventureDaoTest.getAllAdventuresByDestinations" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="Sql2oAdventureDaoTest_getAllAdventuresByDestinations - 2017.08.16 at 15h 38m 29s.xml">
-      <configuration name="Sql2oAdventureDaoTest.getAllAdventuresByDestinations" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="Sql2oAdventureDaoTest_updateDescription - 2017.08.16 at 15h 51m 49s.xml">
       <configuration name="Sql2oAdventureDaoTest.updateDescription" configurationId="JUnit" />
     </history-entry>
     <history-entry file="Sql2oAdventureDaoTest_updateDescription - 2017.08.16 at 15h 54m 58s.xml">
+      <configuration name="Sql2oAdventureDaoTest.updateDescription" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="Sql2oAdventureDaoTest_updateDescription - 2017.08.16 at 15h 55m 12s.xml">
       <configuration name="Sql2oAdventureDaoTest.updateDescription" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -1263,7 +1262,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27973568" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.04185022" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25980017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -1272,7 +1271,7 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39977974" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -1344,56 +1343,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dataModels/Destination.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding>
-            <element signature="e#139#140#0" expanded="true" />
-            <element signature="e#179#180#0" expanded="true" />
-            <element signature="e#220#221#0" expanded="true" />
-            <element signature="e#245#246#0" expanded="true" />
-            <element signature="e#280#281#0" expanded="true" />
-            <element signature="e#311#312#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#387#388#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-            <element signature="e#475#476#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/dao/Sql2oDestinationDaoTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding>
-            <element signature="e#804#805#0" expanded="true" />
-            <element signature="e#859#860#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db/create.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oDestinationDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#322#323#0" expanded="true" />
-            <element signature="e#356#357#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dataModels/Adventure.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -1457,8 +1406,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oAdventureDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="220">
+          <caret line="51" column="64" lean-forward="false" selection-start-line="51" selection-start-column="53" selection-end-line="51" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#285#286#0" expanded="true" />
@@ -1467,11 +1416,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dao/Sql2oDestinationDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="524">
+          <caret line="59" column="0" lean-forward="true" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#322#323#0" expanded="true" />
+            <element signature="e#356#357#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/db/create.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="18" lean-forward="true" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/dataModels/Destination.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="31" column="35" lean-forward="true" selection-start-line="31" selection-start-column="35" selection-end-line="31" selection-end-column="35" />
+          <folding>
+            <element signature="e#139#140#0" expanded="true" />
+            <element signature="e#179#180#0" expanded="true" />
+            <element signature="e#220#221#0" expanded="true" />
+            <element signature="e#245#246#0" expanded="true" />
+            <element signature="e#280#281#0" expanded="true" />
+            <element signature="e#311#312#0" expanded="true" />
+            <element signature="e#359#360#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#435#436#0" expanded="true" />
+            <element signature="e#475#476#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/dao/Sql2oAdventureDaoTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="467">
-          <caret line="60" column="36" lean-forward="false" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+        <state relative-caret-position="75">
+          <caret line="12" column="36" lean-forward="true" selection-start-line="12" selection-start-column="36" selection-end-line="12" selection-end-column="36" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/dao/Sql2oDestinationDaoTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="12" column="38" lean-forward="true" selection-start-line="12" selection-start-column="38" selection-end-line="12" selection-end-column="38" />
+          <folding>
+            <element signature="e#804#805#0" expanded="true" />
+            <element signature="e#859#860#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
