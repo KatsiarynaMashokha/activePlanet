@@ -81,5 +81,33 @@ public class App {
             dataModels.put("currentAdventure", thisAdventure);
             return new ModelAndView(dataModels, "details.hbs");
         }, new HandlebarsTemplateEngine());
+
+        // show a form to update an adventure
+        get("/destinations/:destID/adventures/:adventureID/edit", (request, response) -> {
+            Map<String, Object> dataModels = new HashMap<>();
+            int adID = Integer.parseInt(request.params("adventureID"));
+            Adventure thisAdventure = adventureDao.findById(adID);
+            dataModels.put("currentAdventure", thisAdventure);
+            return new ModelAndView(dataModels, "update-adventure.hbs");
+        }, new HandlebarsTemplateEngine());
+
+
+        //update a new adventure
+        post("/destinations/:destId/adventures/:adventureID/update", (request, response) -> {
+
+//            int destID = Integer.parseInt(request.params("destId"));
+            int adID = Integer.parseInt(request.params("adventureID"));
+            String newTitle = request.queryParams("title");
+            String description = request.queryParams("description");
+            String duration = request.queryParams("duration");
+
+            adventureDao.updateTitle(adID, newTitle);
+            adventureDao.updateDescription(adID, description);
+            adventureDao.updateDuration(adID, duration);
+            int destID = adventureDao.findById(adID).getDestinationPoint();
+
+            response.redirect("/destinations/" + destID + "/adventures/" + adID);
+            return null;
+        });
     }
 }

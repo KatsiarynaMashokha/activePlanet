@@ -1,0 +1,24 @@
+{{#partial "content"}}
+
+<div class="row">
+    <h1>Edit</h1>
+    <form action="/destinations/{{currentAdventure.destinationPoint}}/adventures/{{currentAdventure.adventureId}}/update" method="post">
+        <div class="form-group">
+            <label for="title">Title: </label>
+            <input id="title" name="title" type="text" value="{{currentAdventure.title}}">
+        </div>
+        <div class="form-group">
+            <label for="description">Description: </label>
+            <input id="description" name="description" type="text" value="{{currentAdventure.description}}">
+        </div>
+        <div class="form-group">
+            <label for="duration">Time Commitment: </label>
+            <input id="duration" name="duration" type="text" value="{{currentAdventure.duration}}">
+        </div>
+        <button class="btn btn-info" type="submit">Edit</button>
+    </form>
+</div>
+
+{{/partial}}
+{{> layout.hbs}}
+
