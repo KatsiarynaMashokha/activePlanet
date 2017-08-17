@@ -1,11 +1,20 @@
+
+{{#partial "header"}}
+    <h1>Welcome to Active Planet</h1>
+    <small>We're an open source repository for active adventures from around the world</small>
+{{/partial}}
+
+
 {{#partial "content"}}
 
 {{#if destinations}}
     {{#each destinations}}
-        <div class="col-md-4">
-            <a href="destinations/{{id}}/adventures"><h1>{{location}}</h1></a>
-        </div>
-
+        <a href="destinations/{{id}}/adventures">
+            <div class="col-md-4 destinationsHome">
+                <h1 class="imageText">{{location}}</h1>
+                <img src="/images/bg-{{id}}.jpg" alt="image of something">
+            </div>
+        </a>
     {{/each}}
 {{/if}}
 

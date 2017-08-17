@@ -62,6 +62,7 @@ public class Sql2oDestinationDaoTest {
         destinationDao.add(testDestination3);
         Destination foundDest = destinationDao.findById(testDestination3.getId());
         String name = foundDest.getLocation();
+
         assertEquals(3, foundDest.getId());
         assertEquals("North America", name);
     }
@@ -70,7 +71,9 @@ public class Sql2oDestinationDaoTest {
     public void updateLocation() throws Exception {
         Destination testDestination = createDest();
         destinationDao.add(testDestination);
+
         destinationDao.updateLocation(testDestination.getId(), "Africa");
+
         Destination updatedDestination = destinationDao.findById(testDestination.getId());
         assertEquals("Africa", updatedDestination.getLocation());
     }
@@ -83,5 +86,12 @@ public class Sql2oDestinationDaoTest {
         destinationDao.add(testDestination2);
         destinationDao.removeById(testDestination.getId());
         assertEquals(1, destinationDao.getAllDestinations().size());
+    }
+
+    @Test
+    public void locationAlreadyExists() throws Exception {
+        Destination testDestination = createDest();
+        destinationDao.add(testDestination);
+        assertEquals(testDestination,  destinationDao.locationAlreadyExists("North America"));
     }
 }

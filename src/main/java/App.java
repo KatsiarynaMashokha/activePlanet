@@ -7,6 +7,7 @@ import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
 import sun.security.krb5.internal.crypto.Des;
 
+import javax.swing.*;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,8 +24,6 @@ public class App {
         Sql2oAdventureDao adventureDao = new Sql2oAdventureDao(sql2o);
         Sql2oDestinationDao destinationDao = new Sql2oDestinationDao(sql2o);
 
-
-
         // homepage
         get("/", (request, response) -> {
             Map<String, Object> dataModels = new HashMap<>();
@@ -35,6 +34,7 @@ public class App {
         //link to new destination form
         get("/destinations/new", (request, response) -> {
             Map<String, Object> dataModels = new HashMap<>();
+            dataModels.put("destinations", destinationDao.getAllDestinations());
             return new ModelAndView(dataModels, "addInfo.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -42,7 +42,14 @@ public class App {
         post("/" ,(request, response) -> {
             Map<String, Object> dataModels = new HashMap<>();
             String newDest = request.queryParams("newSpot");
-            destinationDao.add(new Destination(newDest));
+            if ( destinationDao.locationAlreadyExists(newDest) == null ) {
+                destinationDao.add(new Destination(newDest));
+            }
+            else {
+                JOptionPane.showMessageDialog(null, "Pls enter a valid input!");
+                response.redirect("/destinations/new");
+                return null;
+            }
             dataModels.put("destinations", destinationDao.getAllDestinations());
             return new ModelAndView(dataModels, "index.hbs");
         }, new HandlebarsTemplateEngine());
@@ -55,6 +62,7 @@ public class App {
             dataModels.put("destination", foundDest);
 
             dataModels.put("adventures", adventureDao.getAllAdventuresByDestinations(destID) );
+            dataModels.put("destinations", destinationDao.getAllDestinations());
 
             return new ModelAndView(dataModels, "adventures.hbs");
         }, new HandlebarsTemplateEngine());
@@ -79,6 +87,7 @@ public class App {
             int adID = Integer.parseInt(request.params("adventureID"));
             Adventure thisAdventure = adventureDao.findById(adID);
             dataModels.put("currentAdventure", thisAdventure);
+            dataModels.put("destinations", destinationDao.getAllDestinations());
             return new ModelAndView(dataModels, "details.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -88,14 +97,13 @@ public class App {
             int adID = Integer.parseInt(request.params("adventureID"));
             Adventure thisAdventure = adventureDao.findById(adID);
             dataModels.put("currentAdventure", thisAdventure);
+            dataModels.put("destinations", destinationDao.getAllDestinations());
             return new ModelAndView(dataModels, "update-adventure.hbs");
         }, new HandlebarsTemplateEngine());
 
 
         //update a new adventure
         post("/destinations/:destId/adventures/:adventureID/update", (request, response) -> {
-
-//            int destID = Integer.parseInt(request.params("destId"));
             int adID = Integer.parseInt(request.params("adventureID"));
             String newTitle = request.queryParams("title");
             String description = request.queryParams("description");
@@ -109,5 +117,7 @@ public class App {
             response.redirect("/destinations/" + destID + "/adventures/" + adID);
             return null;
         });
+
+
     }
 }

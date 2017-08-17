@@ -10,6 +10,7 @@ public interface DestinationDao {
 
     // read information
     List<Destination> getAllDestinations();
+    Destination locationAlreadyExists(String location);
 
     Destination findById(int id);
 

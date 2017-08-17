@@ -1,0 +1,55 @@
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  background: url('images/background.jpg') lightgrey;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  color: white;
+  font-family: georgia;
+}
+
+.jumbotron {
+    opacity: .5;
+}
+
+.jumbotron h1 {
+    text-align: center;
+    background: black;
+    opacity: 1.0;
+    padding-top: 10px;
+}
+
+
+a {
+ color: white;
+}
+
+.nav {
+  font-size: 16px;
+}
+
+.destinations {
+  height: 100px;
+  position: relative;
+
+}
+
+img {
+  height: 100%;
+  width: 100%;
+}
+
+.imageText {
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  font-size: 30px;
+}
+
+input{
+   color: black;
+}

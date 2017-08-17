@@ -4,12 +4,11 @@
     <title>{{#block "title"}}Active Planet{{/block}}</title>
 
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="/app.css">
 </head>
 <body>
 <ul class="nav nav-tabs">
-    <li role="presentation" class="active"><a href="/">Home</a></li>
-    <li role="presentation"><a href="/tasks/new">Destinations</a></li>
-
+    <li role="presentation"><a href="/">Home</a></li>
     <li role="presentation" class="dropdown">
         <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
             Destinations <span class="caret"></span>
@@ -17,7 +16,7 @@
         <ul class="dropdown-menu">
             {{#if destinations}}
                 {{#each destinations}}
-                    <li><a href="/destinations/{{id}}">{{location}}</a></li>
+                    <li><a href="/destinations/{{id}}/adventures">{{location}}</a></li>
                 {{/each}}
                 <li><a href="/destinations/new">Add a new Destination</a></li>
             {{else}}
@@ -30,10 +29,8 @@
     <div class="container">
     <!--begin main template-->
     <div class="page-header jumbotron">
-        <!--<img src="/images/rawpixel-com-296621.jpg" width="70%" alt="https://unsplash.com/search/task?photo=Lh_bn9SgRSY">-->
         {{#block "header"}}
-            <h1>Welcome to Active Planet</h1>
-            <small>We're an open source repository for active adventures from around the world</small>
+
         {{/block}}
     </div>
 
