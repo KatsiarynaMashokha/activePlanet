@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{#block "title"}}Active Planet{{/block}}</title>
+
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+</head>
+<body>
+<ul class="nav nav-tabs">
+    <li role="presentation" class="active"><a href="/">Home</a></li>
+    <li role="presentation"><a href="/tasks/new">Destinations</a></li>
+
+    <li role="presentation" class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+            Destinations <span class="caret"></span>
+        </a>
+        <ul class="dropdown-menu">
+            {{#if destinations}}
+                {{#each destinations}}
+                    <li><a href="/destinations/{{id}}">{{location}}</a></li>
+                {{/each}}
+                <li><a href="/destinations/new">Add a new Destination</a></li>
+            {{else}}
+                <li><a href="/destinations/new">Add a new Destination</a></li>
+            {{/if}}
+        </ul>
+    </li>
+</ul>
+<div class="container">
+<!--begin main template-->
+<div class="page-header jumbotron">
+    <!--<img src="/images/rawpixel-com-296621.jpg" width="70%" alt="https://unsplash.com/search/task?photo=Lh_bn9SgRSY">-->
+    <h1>Welcome to Active Planet</h1>
+    <small>We're an open source repository for active adventures from around the world</small>
+</div>
+
+<div class="col-md-12">
+    {{#block "content"}}
+    {{/block}}
+
+</div>
+</div>
+<!--end main template-->
+{{#block "footer"}}
+    </body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    </html>
+{{/block}}
