@@ -30,6 +30,7 @@ Temporary Items
 
 ### Java ###
 *.class
+.idea
 
 # BlueJ files
 *.ctxt
@@ -49,6 +50,8 @@ hs_err_pid*
 ### Gradle ###
 .gradle
 /build/
+settings.gradle
+gradlew/
 
 # Ignore Gradle GUI config
 gradle-app.setting
