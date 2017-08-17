@@ -1,0 +1,54 @@
+{{#partial "content"}}
+
+        <div class="jumbotron">
+            <h1>{{destination.location}}</h1>
+        </div>
+
+    {{#if adventures}}
+        {{#each adventures}}
+            <div class="col-md-3">
+                <h1>{{title}}</h1>
+                <h5>{{description}}</h5>
+                <a href="/destinations/{{destinationPoint}}/adventures/{{adventureId}}"><p>Details</p></a>
+            </div>
+        {{/each}}
+    {{else}}
+        <div class="row">
+            <h1>Add an Adventure!</h1>
+            <form action="/destinations/{{destination.id}}/adventures" method="post">
+                <div class="form-group">
+                    <label for="title">Title: </label>
+                    <input id="title" name="title" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="category">Category: </label>
+                    <select name="category" id="category">
+                        <option value="Road Trip">Road Trip</option>
+                        <option value="Biking">Biking</option>
+                        <option value="Trekking">Trekking</option>
+                        <option value="Running">Running</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description: </label>
+                    <input id="description" name="description" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="duration">Time Commitment: </label>
+                    <input id="duration" name="duration" type="text">
+                </div>
+                <div class="form-group">
+                    <label for="peak">Peak Season: </label>
+                    <input id="peak" name="peak" type="text">
+                </div>
+                <button class="btn btn-info" type="submit">Add</button>
+            </form>
+        </div>
+
+    {{/if}}
+
+
+
+{{/partial}}
+
+{{> layout.hbs}}

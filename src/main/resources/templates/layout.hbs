@@ -26,13 +26,16 @@
         </ul>
     </li>
 </ul>
-<div class="container">
-<!--begin main template-->
-<div class="page-header jumbotron">
-    <!--<img src="/images/rawpixel-com-296621.jpg" width="70%" alt="https://unsplash.com/search/task?photo=Lh_bn9SgRSY">-->
-    <h1>Welcome to Active Planet</h1>
-    <small>We're an open source repository for active adventures from around the world</small>
-</div>
+
+    <div class="container">
+    <!--begin main template-->
+    <div class="page-header jumbotron">
+        <!--<img src="/images/rawpixel-com-296621.jpg" width="70%" alt="https://unsplash.com/search/task?photo=Lh_bn9SgRSY">-->
+        {{#block "header"}}
+            <h1>Welcome to Active Planet</h1>
+            <small>We're an open source repository for active adventures from around the world</small>
+        {{/block}}
+    </div>
 
 <div class="col-md-12">
     {{#block "content"}}

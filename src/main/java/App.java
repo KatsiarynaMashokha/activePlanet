@@ -1,9 +1,11 @@
 import dao.Sql2oAdventureDao;
 import dao.Sql2oDestinationDao;
+import dataModels.Adventure;
 import dataModels.Destination;
 import org.sql2o.Sql2o;
 import spark.ModelAndView;
 import spark.template.handlebars.HandlebarsTemplateEngine;
+import sun.security.krb5.internal.crypto.Des;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -21,10 +23,12 @@ public class App {
         Sql2oAdventureDao adventureDao = new Sql2oAdventureDao(sql2o);
         Sql2oDestinationDao destinationDao = new Sql2oDestinationDao(sql2o);
 
+
+
         // homepage
         get("/", (request, response) -> {
             Map<String, Object> dataModels = new HashMap<>();
-
+            dataModels.put("destinations", destinationDao.getAllDestinations());
             return new ModelAndView(dataModels, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
@@ -43,6 +47,39 @@ public class App {
             return new ModelAndView(dataModels, "index.hbs");
         }, new HandlebarsTemplateEngine());
 
+        //display adventures for each destination
+        get("/destinations/:destID/adventures", (request, response) -> {
+            Map<String, Object> dataModels = new HashMap<>();
+            int destID = Integer.parseInt(request.params("destID") );
+            Destination foundDest = destinationDao.findById(destID);
+            dataModels.put("destination", foundDest);
 
+            dataModels.put("adventures", adventureDao.getAllAdventuresByDestinations(destID) );
+
+            return new ModelAndView(dataModels, "adventures.hbs");
+        }, new HandlebarsTemplateEngine());
+
+//        process new adventure
+        post("/destinations/:destID/adventures", (request, response) -> {
+            Map<String, Object> dataModels = new HashMap<>();
+            int destID = Integer.parseInt(request.params("destID"));
+            String newTitle = request.queryParams("title");
+            String category = request.queryParams("category");
+            String description = request.queryParams("description");
+            String duration = request.queryParams("duration");
+            String peak = request.queryParams("peak");
+            adventureDao.add(new Adventure(category, newTitle, description, duration, peak, destID));
+            response.redirect("/destinations/" + destID + "/adventures");
+            return null;
+        });
+
+        //show details of specific adventure
+        get("/destinations/:destID/adventures/:adventureID", (request, response) -> {
+            Map<String, Object> dataModels = new HashMap<>();
+            int adID = Integer.parseInt(request.params("adventureID"));
+            Adventure thisAdventure = adventureDao.findById(adID);
+            dataModels.put("currentAdventure", thisAdventure);
+            return new ModelAndView(dataModels, "details.hbs");
+        }, new HandlebarsTemplateEngine());
     }
 }
